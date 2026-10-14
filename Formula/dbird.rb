@@ -1,26 +1,26 @@
 class Dbird < Formula
   desc "Fully playable terminal recreation of the classic Flappy Bird game"
   homepage "https://github.com/leduftw/dbird"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/leduftw/dbird/releases/download/v#{version}/dbird-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "8197ed70f340093dd77b386bfeaa734b8e3ee9839a2fe3906c73a9d55f78b920"
+      url "https://github.com/leduftw/dbird/releases/download/v1.3.0/dbird-macos-arm64.zip"
+      sha256 "c401a6646b5ef0c162caa076d0793cbafcfbe7f81380c097bc0271244f0cfe8f"
     else
-      url "https://github.com/leduftw/dbird/releases/download/v#{version}/dbird-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "a005d3b8b8df1113069622ee8455414b89daa450aa0a85aa1a42140bbb19b5e1"
+      url "https://github.com/leduftw/dbird/releases/download/v1.3.0/dbird-macos-x64.zip"
+      sha256 "761f9d9c0609ba7f325d4ce0f09f2ed0f090d9e61a5863c79821acca867d963f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/leduftw/dbird/releases/download/v#{version}/dbird-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "27289845aa25e8091054bfd906de5993760ec09c271a4c8c7200d60039f6aa08"
+      url "https://github.com/leduftw/dbird/releases/download/v1.3.0/dbird-linux-arm64.tar.gz"
+      sha256 "06bc4cf0e28fd79b36b65081f74b9688234ba805e62fe96b3fb6e0bff27f5d1c"
     else
-      url "https://github.com/leduftw/dbird/releases/download/v#{version}/dbird-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0ebd98b41fec0e5bfa10bcc49d12248f42a0a8152ddcbd89eaf8a5717f181a05"
+      url "https://github.com/leduftw/dbird/releases/download/v1.3.0/dbird-linux-x64.tar.gz"
+      sha256 "6fc5b5643f44a3949790097195c705c91869905324b75397a2ed3f8cffc5fee6"
     end
   end
 
