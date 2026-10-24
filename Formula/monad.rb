@@ -1,28 +1,28 @@
 class Monad < Formula
   desc "Watches what your machine is playing and logs it as a timeline"
   homepage "https://github.com/leduftw/monad"
-  version "2.2.0"
+  version "2.2.1"
   license "MIT"
 
   on_macos do
     depends_on macos: :sonoma
     if Hardware::CPU.arm?
-      url "https://github.com/leduftw/monad/releases/download/v2.2.0/monad-macos-arm64.zip"
-      sha256 "e949f95bbbc9facfeb096796d0da39d6be75a23350138897eade39910489a528"
+      url "https://github.com/leduftw/monad/releases/download/v2.2.1/monad-macos-arm64.zip"
+      sha256 "70eef724b84b0102383e2ec402e5d8b6fa30f3dc953979bf6de4881e1449dd52"
     else
-      url "https://github.com/leduftw/monad/releases/download/v2.2.0/monad-macos-x64.zip"
-      sha256 "441d8e0fd10a52fe4bd23c4955362fad498382a68352800b1b8b922c68c34779"
+      url "https://github.com/leduftw/monad/releases/download/v2.2.1/monad-macos-x64.zip"
+      sha256 "a3c6a1f2938d993b26008dfb70bff2857ee12ace5c7b606e8c74f172af7be679"
     end
   end
 
   on_linux do
     depends_on "pulseaudio"
     if Hardware::CPU.arm?
-      url "https://github.com/leduftw/monad/releases/download/v2.2.0/monad-linux-arm64.tar.gz"
-      sha256 "3d9f3f9a717bb6ffd21c5ab09c1063bf6b3b059c62b4b54019a7ff5d7e0a7d62"
+      url "https://github.com/leduftw/monad/releases/download/v2.2.1/monad-linux-arm64.tar.gz"
+      sha256 "c821415f83d659608071fc6b98253229ffb4d08c58baaef0055a8ae9945bcfad"
     else
-      url "https://github.com/leduftw/monad/releases/download/v2.2.0/monad-linux-x64.tar.gz"
-      sha256 "b3242810114508d588a855349eed61fadbbe3ba07d60323443ead668778c466c"
+      url "https://github.com/leduftw/monad/releases/download/v2.2.1/monad-linux-x64.tar.gz"
+      sha256 "598ede0432b35ee9b9618647e749e22f742cdf9cc09a14df549eb026147d6641"
     end
   end
 
