@@ -1,28 +1,28 @@
 class Subtitler < Formula
   desc "Subtitles for any video, in any language"
   homepage "https://github.com/leduftw/subtitler"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     depends_on "ffmpeg"
     if Hardware::CPU.arm?
-      url "https://github.com/leduftw/subtitler/releases/download/v1.0.0/subtitler-macos-arm64.zip"
-      sha256 "1c1e1ce9216a9e0cd45dd5b18fbd709f76e79aa60c6e8005609bc2a760a8b034"
+      url "https://github.com/leduftw/subtitler/releases/download/v1.0.1/subtitler-macos-arm64.zip"
+      sha256 "9276ec2c1e6567474af09beb249adb2f5b2c63f559df1231297a7c431f22ce29"
     else
-      url "https://github.com/leduftw/subtitler/releases/download/v1.0.0/subtitler-macos-x64.zip"
-      sha256 "8e1cd8db0a859ee2866df9a1399f3dad95b8d142ed71c32c2ce76a312fdc44ae"
+      url "https://github.com/leduftw/subtitler/releases/download/v1.0.1/subtitler-macos-x64.zip"
+      sha256 "1a6efde4b2bcac45f5c6d467e2737e05c69e464619e1b5d080058a01f9aef20a"
     end
   end
 
   on_linux do
     depends_on "ffmpeg"
     if Hardware::CPU.arm?
-      url "https://github.com/leduftw/subtitler/releases/download/v1.0.0/subtitler-linux-arm64.tar.gz"
-      sha256 "53da8d6ef86fe1680fac3bfc247fd55f724cb9ca9b46b6a7db190b2675e42740"
+      url "https://github.com/leduftw/subtitler/releases/download/v1.0.1/subtitler-linux-arm64.tar.gz"
+      sha256 "4b20720c6bde1f9fa5335688c568d3bbe4933398aa62efb96d4d68d7d0dbd29d"
     else
-      url "https://github.com/leduftw/subtitler/releases/download/v1.0.0/subtitler-linux-x64.tar.gz"
-      sha256 "1234d09410ce6e854b536160ef054526d4d3759ad21c24cb4189c3fa72f4cced"
+      url "https://github.com/leduftw/subtitler/releases/download/v1.0.1/subtitler-linux-x64.tar.gz"
+      sha256 "1fddf1edcb21d16241cd41b59cf517eac73607ed667a3670cbddd9dc62e8b3de"
     end
   end
 
